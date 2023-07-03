@@ -28,12 +28,14 @@ class User {
     String name;
     String email;
     String mobile;
+    String password;
 
-    public User(int userId, String name, String email, String mobile) {
+    public User(int userId, String name, String email, String mobile,String password) {
         this.userId = userId;
         this.name = name;
         this.email = email;
         this.mobile = mobile;
+        this.password=password;
     }
 }
 
@@ -169,8 +171,8 @@ class OnlineHouseRentingPortal {
         OnlineHouseRentingPortal portal = new OnlineHouseRentingPortal();
         Scanner scanner = new Scanner(System.in);
 
-        User user1 = new User(1, "Peter Parker", "peterparker@example.com", "1234567890");
-        User user2 = new User(2, "Tony Stark", "tonystark@example.com", "9876543210");
+        User user1 = new User(1, "Peter Parker", "peterparker@example.com", "1234567890",null);
+        User user2 = new User(2, "Tony Stark", "tonystark@example.com", "9876543210",null);
 
         portal.addUser(user1);
         portal.addUser(user2);
