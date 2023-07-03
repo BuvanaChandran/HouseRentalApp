@@ -3,7 +3,7 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
-class House {
+class House{
     String houseId;
     String locality;
     String city;
